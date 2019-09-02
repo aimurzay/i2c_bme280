@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"bme280_i2c\startup_stm32l031xx.o"
+"bme280_i2c\main.o"
+"bme280_i2c\stm32l0xx_it.o"
+"bme280_i2c\stm32l0xx_hal_msp.o"
+"bme280_i2c\bme280.o"
+"bme280_i2c\stm32l0xx_hal_i2c.o"
+"bme280_i2c\stm32l0xx_hal_i2c_ex.o"
+"bme280_i2c\stm32l0xx_hal_tim.o"
+"bme280_i2c\stm32l0xx_hal_tim_ex.o"
+"bme280_i2c\stm32l0xx_hal_uart.o"
+"bme280_i2c\stm32l0xx_hal_uart_ex.o"
+"bme280_i2c\stm32l0xx_hal.o"
+"bme280_i2c\stm32l0xx_hal_rcc.o"
+"bme280_i2c\stm32l0xx_hal_rcc_ex.o"
+"bme280_i2c\stm32l0xx_hal_flash_ramfunc.o"
+"bme280_i2c\stm32l0xx_hal_flash.o"
+"bme280_i2c\stm32l0xx_hal_flash_ex.o"
+"bme280_i2c\stm32l0xx_hal_gpio.o"
+"bme280_i2c\stm32l0xx_hal_dma.o"
+"bme280_i2c\stm32l0xx_hal_pwr.o"
+"bme280_i2c\stm32l0xx_hal_pwr_ex.o"
+"bme280_i2c\stm32l0xx_hal_cortex.o"
+"bme280_i2c\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "BME280_I2C\BME280_I2C.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BME280_I2C.map" -o BME280_I2C\BME280_I2C.axf
